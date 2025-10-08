@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  app:
+    image: first-next-app:latest
+    ports:
+      - "3001:3000"
+    environment:
+      - NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_bGl2ZS1oZXJvbi00Mi5jbGVyay5hY2NvdW50cy5kZXYk
+      - CLERK_SECRET_KEY=sk_test_xwvtgSsseRXBVEGpW4vMf8xvzdOTLPQ0HHjVxwBErV
+      - NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+      - NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+      - NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+      - NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
